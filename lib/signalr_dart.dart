@@ -1,0 +1,17 @@
+export "src/client/core/hub_connection.dart";
+export "src/client/core/hub_connection_builder.dart";
+export "src/client/core/hub_connection_extensions.invoke.dart";
+export "src/client/core/hub_connection_extensions.on.dart";
+export "src/client/core/hub_connection_extensions.on_result.dart";
+export "src/client/core/hub_connection_extensions.send.dart";
+export "src/client/core/hub_connection_extensions.stream.dart";
+export "src/client/core/i_retry_policy.dart";
+export "src/client/http_connections/http_connection_options.dart";
+export "src/client/http_connections/no_transport_supported_exception.dart";
+export "src/client/http_connections/transport_failed_expection.dart";
+export "src/common/http_connections/http_transport_type.dart";
+export "src/dotnet/basic_credential.dart";
+export "src/dotnet/client_web_socket_options.dart";
+export "src/dotnet/i_connection_factory.dart";
+export "src/dotnet/invalid_operation_exception.dart";
+export "src/dotnet/transfer_format.dart";
