@@ -201,7 +201,7 @@ class ConnectionState implements IInvocationBinder {
 
   void resetTimeout() {
     _nextActivationServerTimeout =
-        DateTime.now().toUtc().add(_hubConnection._options.keepAliveInterval);
+        DateTime.now().toUtc().add(_hubConnection._options.serverTimeout);
   }
 
   @visibleForTesting

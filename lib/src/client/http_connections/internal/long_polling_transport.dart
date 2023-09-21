@@ -19,7 +19,7 @@ class LongPollingTransport implements ITransport {
   final Logger _logger = Logger("LongPollingTransport");
   // final HttpConnectionOptions _httpConnectionOptions;
   IDuplexPipe? _application;
-  final bool _useStatefulReconnect;
+  // final bool _useStatefulReconnect;
   IDuplexPipe? _transport;
   Exception? _error;
   StackTrace? _stackTrace;
@@ -36,8 +36,8 @@ class LongPollingTransport implements ITransport {
   LongPollingTransport(
     Client httpClient, {
     bool useStatefulReconnect = false,
-  })  : _httpClient = httpClient,
-        _useStatefulReconnect = useStatefulReconnect;
+  })  : _httpClient = httpClient;
+        // _useStatefulReconnect = useStatefulReconnect;
 
   @override
   Future<void> start(

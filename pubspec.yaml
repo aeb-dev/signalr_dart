@@ -1,6 +1,6 @@
 name: signalr_dart
 description: A complete SignalR Client including stateful reconnect in dart. You will feel right at home while using this library
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/aeb-dev/signalr_dart
 repository: https://github.com/aeb-dev/signalr_dart
 issues: https://github.com/aeb-dev/signalr_dart/issues

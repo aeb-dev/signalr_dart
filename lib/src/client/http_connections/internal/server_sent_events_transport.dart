@@ -28,7 +28,7 @@ class ServerSentEventsTransport implements ITransport {
   final CancellationTokenSource _transportCts = CancellationTokenSource();
   final CancellationTokenSource _inputCts = CancellationTokenSource();
   final ServerSentEventsMessageParser _parser = ServerSentEventsMessageParser();
-  final bool _useStatefulReconnect;
+  // final bool _useStatefulReconnect;
   IDuplexPipe? _transport;
   IDuplexPipe? _application;
 
@@ -37,8 +37,8 @@ class ServerSentEventsTransport implements ITransport {
   ServerSentEventsTransport(
     Client httpClient, {
     bool useStatefulReconnect = false,
-  })  : _httpClient = httpClient,
-        _useStatefulReconnect = useStatefulReconnect;
+  })  : _httpClient = httpClient;
+        // _useStatefulReconnect = useStatefulReconnect;
 
   @override
   BufferReader get input => _transport!.input;
